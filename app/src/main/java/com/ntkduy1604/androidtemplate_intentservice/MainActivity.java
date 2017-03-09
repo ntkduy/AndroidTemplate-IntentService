@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MyService.class);
         intent.setData(Uri.parse(JSON_URL));
         startService(intent);
+        startService(intent);
+        startService(intent);
     }
 
     public void clearClickHandler(View view) {
