@@ -30,6 +30,12 @@ public class MyService extends IntentService {
          */
         Uri uri = intent.getData();
         Log.i(TAG, "onHandleIntent: " + uri.toString());
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
